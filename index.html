@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css"><link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.com/libraries/Chart.js"><link rel="icon" href="img/logo.png">
+    <title>February 20-24</title>
+  </head>
+  <body>
+    <nav class="nav">
+      <ul class="nav-ul" id="nav"> 
+        <li class="nav-li"> <a href="#bug">Ошибки</a></li>
+        <li class="nav-li"> <a href="#OS">Клавификация ОС</a></li>
+        <li class="nav-li"><a href="#mail">Количество писем </a></li>
+        <li class="nav-li"> <a href="#feature">Запросы функций</a></li>
+        <li class="nav-li"> <a href="#archive">Архивы</a></li>
+      </ul>
+    </nav>
+    <div class="container questions">
+      <div class="tab-content_cnt--label">
+        <h2 class="tab-content_cnt--label" id="bug">Ошибки за неделю</h2>
+      </div>
+      <button class="tab-open"><span class="tab-open--figure">Не отображается панель безопасности </span></button>
+      <div class="tab-content">
+        <div class="tab-content_cnt"><span class="tab-content--line">—</span>
+          <div class="tab-content_text">Алексей определил проблему. при включенном клиентском шифровании и последующей смене мастер-пароля, отчет не удаляется. Было предложено удалить коллекцию "analysed_password" в базе данных.</div>
+          <div class="tab-content_cnt-img"></div>
+        </div>
+      </div>
+      <button class="tab-open"><span class="tab-open--figure">Риск компрометации</span></button>
+      <div class="tab-content">
+        <div class="tab-content_cnt"> <span class="tab-content--line">—</span>
+          <div class="tab-content_text">Риск компрометации для пользователей и администраторов, которые открыли пароль, но при этом не были удаленны из сейфа или организации.</div><br>
+<br><span class="tab-content--line"></span>
+          <div class="tab-content_text">Роль у таких пользователей отображенна как <code>[object Object]</code></div>
+          <div class="tab-content_cnt-img"><img class="tab-content_img img--hidden" src="img/role.png" alt="role"></div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="tab-content_cnt--label">
+        <h2 class="tab-content_cnt--label" id="OS">Обращения с ОС</h2>
+      </div>
+      <div class="os_cnt">
+        <div class="circle-os"> 
+          <div class="circle-os_line"> 
+            <div class="circle-os_line--front">  </div>
+            <div class="circle-os_line--load circle-os_line--load_OS--Ubuntu"></div>
+            <div class="circle-os_line--load circle-os_line--load_OS--Debian"></div>
+            <div class="circle-os_line--load circle-os_line--load_OS--CentOS"></div>
+            <div class="circle-os_line--load circle-os_line--load_OS--RHEL"></div>
+            <div class="circle-os_line--load circle-os_line--load_OS--Astra"></div>
+            <div class="circle-os_line--load circle-os_line--load_OS--Windows"></div>
+            <div class="circle-os_line--load circle-os_line--load_OS--Docker"></div>
+            <div class="circle-os_line--load circle-os_line--load_OS--Cloud"></div>
+            <div class="circle-os_line--load circle-os_line--load_OS--Unknow"></div>
+            <div class="circle-os_line--load circle-os_line--load_OS--Unknow--01"></div>
+          </div>
+        </div>
+        <div class="description-os">
+          <div class="description-os_name">
+            <div class="description-os_cnt"><span class="description-os--Ubuntu"></span>
+              <p class="description-os_text">Ubuntu — <span class="description-os_count">07</span></p>
+            </div>
+            <div class="description-os_cnt"><span class="description-os--Debian"></span>
+              <p class="description-os_text">Debian — <span class="description-os_count">02</span></p>
+            </div>
+            <div class="description-os_cnt"><span class="description-os--CentOS"></span>
+              <p class="description-os_text">CentOS — <span class="description-os_count">02</span></p>
+            </div>
+            <div class="description-os_cnt"><span class="description-os--RHEL"></span>
+              <p class="description-os_text">RHEL — <span class="description-os_count">01</span></p>
+            </div>
+            <div class="description-os_cnt"><span class="description-os--Astra"></span>
+              <p class="description-os_text">Astra — <span class="description-os_count">00</span></p>
+            </div>
+            <div class="description-os_cnt"><span class="description-os--Windows"></span>
+              <p class="description-os_text">Windows — <span class="description-os_count">14</span></p>
+            </div>
+            <div class="description-os_cnt"><span class="description-os--Docker"></span>
+              <p class="description-os_text">Docker — <span class="description-os_count">06</span></p>
+            </div>
+            <div class="description-os_cnt"><span class="description-os--Cloud"></span>
+              <p class="description-os_text">Cloud — <span class="description-os_count">16</span></p>
+            </div>
+            <div class="description-os_cnt"><span class="description-os--Unknown"></span>
+              <p class="description-os_text">Неопределённо — <span class="description-os_count">19</span></p>
+            </div>
+            <div class="description-os_cnt">
+              <p class="description-os_text--total">Общее количество клиентов: <span class="description-os_count"><code class="code--count">67</code></span></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="content--label">
+        <h2 class="tab-content_cnt--label" id="mail">Количество обработаных писем</h2>
+      </div>
+      <div class="content-text--noline"></div>
+      <div class="ctn-block--inline">
+        <div class="ctn-block"><span class="count count-time">10</span>
+          <div class="ctn-cube">
+            <div class="cube cube-01 cube-01--anm"></div>
+          </div><span class="count count-mail">20</span>
+        </div>
+        <div class="ctn-block"><span class="count count-time">11</span>
+          <div class="ctn-cube">
+            <div class="cube cube-02"></div>
+          </div><span class="count count-mail">16</span>
+        </div>
+        <div class="ctn-block"><span class="count count-time">12</span>
+          <div class="ctn-cube">
+            <div class="cube cube-03"></div>
+          </div><span class="count count-mail">18</span>
+        </div>
+        <div class="ctn-block"><span class="count count-time">13</span>
+          <div class="ctn-cube">
+            <div class="cube cube-04"></div>
+          </div><span class="count count-mail">15</span>
+        </div>
+        <div class="ctn-block"><span class="count count-time">14</span>
+          <div class="ctn-cube">
+            <div class="cube cube-05"></div>
+          </div><span class="count count-mail">10</span>
+        </div>
+        <div class="ctn-block"><span class="count count-time">15</span>
+          <div class="ctn-cube">
+            <div class="cube cube-06"></div>
+          </div><span class="count count-mail">13</span>
+        </div>
+        <div class="ctn-block"><span class="count count-time">16</span>
+          <div class="ctn-cube">
+            <div class="cube cube-07"></div>
+          </div><span class="count count-mail">17</span>
+        </div>
+        <div class="ctn-block"><span class="count count-time">17</span>
+          <div class="ctn-cube">
+            <div class="cube cube-08"></div>
+          </div><span class="count count-mail">19</span>
+        </div>
+        <div class="ctn-block"><span class="count count-time">18></span>
+          <div class="ctn-cube">
+            <div class="cube cube-09"></div>
+          </div><span class="count count-mail">16</span>
+        </div>
+      </div>
+      <div class="mail-count">
+        <p class="mail-count_description">Общее количество писем: <span class="mail-count_total"><code class="code--count">144</code> </span></p>
+      </div>
+    </div>
+    <div class="container">
+      <h2 class="tab-content_cnt--label" id="feature">Запросы функций</h2>
+      <div class="table">
+        <div class="table_inner">
+          <button class="tab-open"><span class="tab-open--figure">Пароли +(3)</span></button>
+          <div class="tab-content">
+            <div class="tab-content_cnt"><span class="tab-content--line">—</span>
+              <div class="tab-content_text">Корзина *11 <code>+(2)</code></div>
+            </div>
+            <div class="tab-content_cnt"><span class="tab-content--line">—</span>
+              <div class="tab-content_text">Ярлыки для паролей *2 <code>+(1)</code></div>
+            </div>
+            <div class="tab-content_cnt"><span class="tab-content--line">—</span>
+              <div class="tab-content_text">TOTP более 6 символов <code>+(1)</code></div>
+            </div>
+            <div class="tab-content_cnt"><span class="tab-content--line">—</span>
+              <div class="tab-content_text">Политика паролей *5</div>
+            </div>
+            <div class="tab-content_cnt"><span class="tab-content--line">—</span>
+              <div class="tab-content_text">Шаблоны с предопределенными полями *4</div>
+            </div>
+            <div class="tab-content_cnt"><span class="tab-content--line">—</span>
+              <div class="tab-content_text">Скрытые пароли *3</div>
+            </div>
+            <div class="tab-content_cnt"><span class="tab-content--line">—</span>
+              <div class="tab-content_text">Добавление нескольких URL-адресов *2</div>
+            </div>
+            <div class="tab-content_cnt"><span class="tab-content--line">—</span>
+              <div class="tab-content_text">Экспорт паролей по расписанию *1 </div>
+            </div>
+          </div>
+          <button class="tab-open"><span class="tab-open--figure">Расширение (+2)</span></button>
+          <div class="tab-content">
+            <div class="tab-content_cnt"><span class="tab-content--line">—</span>
+              <div class="tab-content_text">Добавление поддержки нестандартных форм авторизации *6 <code>+(2)</code></div>
+            </div>
+            <div class="tab-content_cnt"><span class="tab-content--line">—</span>
+              <div class="tab-content_text">Возможность вставить доп.поле URL, для заполнения расширением *2 <code>+(1)</code></div>
+            </div>
+            <div class="tab-content_cnt"><span class="tab-content--line">—</span>
+              <div class="tab-content_text">Возможность отключения автоматического входа в формы *1 </div>
+            </div>
+          </div>
+          <button class="tab-open"><span class="tab-open--figure">Сессия +(1)</span></button>
+          <div class="tab-content">
+            <div class="tab-content_cnt"><span class="tab-content--line">—</span>
+              <div class="tab-content_text">Устанавливать любое время выхода из системы при неактивности *5 <code>+(1)</code></div>
+            </div>
+            <div class="tab-content_cnt"><span class="tab-content--line">—</span>
+              <div class="tab-content_text">Возможность отслеживать, у кого из пользователей включен 2FA *1 </div>
+            </div>
+            <div class="tab-content_cnt"><span class="tab-content--line">—</span>
+              <div class="tab-content_text">Возможность использования 2FA Пассворк при включенном SSO *2</div>
+            </div>
+          </div>
+          <button class="tab-open"><span class="tab-open--figure">Интерфейс +(1)</span></button>
+          <div class="tab-content">
+            <div class="tab-content_cnt"><span class="tab-content--line">—</span>
+              <div class="tab-content_text">Отображение полного пути к паролю в «Панель безопасности» *2 <code>+(1)</code></div>
+            </div>
+            <div class="tab-content_cnt"><span class="tab-content--line">—</span>
+              <div class="tab-content_text">Установка логотипа компании *6</div>
+            </div>
+            <div class="tab-content_cnt"><span class="tab-content--line">—</span>
+              <div class="tab-content_text">Предложения имеющихся тегов при добавление *3</div>
+            </div>
+            <div class="tab-content_cnt"><span class="tab-content--line">—</span>
+              <div class="tab-content_text">Отображение полного пути к паролю в «Инбоксе» *2</div>
+            </div>
+            <div class="tab-content_cnt"><span class="tab-content--line">—</span>
+              <div class="tab-content_text">Скрытие тегов *1</div>
+            </div>
+          </div>
+          <button class="tab-open"><span class="tab-open--figure">Доступ +(1)</span></button>
+          <div class="tab-content">
+            <div class="tab-content_cnt"><span class="tab-content--line">—</span>
+              <div class="tab-content_text">Роль «Аудитор» *7 <code>+(1)</code></div>
+            </div>
+            <div class="tab-content_cnt"><span class="tab-content--line">—</span>
+              <div class="tab-content_text">Отображение редакции паролей для сотрудников c доступом «Полный доступ» или ниже *1</div>
+            </div>
+          </div>
+          <button class="tab-open"><span class="tab-open--figure">Поиск</span></button>
+          <div class="tab-content">
+            <div class="tab-content_cnt"><span class="tab-content--line">—</span>
+              <div class="tab-content_text">Wildcard поиск *6</div>
+            </div>
+            <div class="tab-content_cnt"><span class="tab-content--line">—</span>
+              <div class="tab-content_text">Поиск папок в приложении Пассворк *2</div>
+            </div>
+            <div class="tab-content_cnt"><span class="tab-content--line">—</span>
+              <div class="tab-content_text">Установка глобальных цветовых меток *1</div>
+            </div>
+          </div>
+          <button class="tab-open"><span class="tab-open--figure">Шифрование</span></button>
+          <div class="tab-content">
+            <div class="tab-content_cnt"><span class="tab-content--line">—</span>
+              <div class="tab-content_text">Ротация ключа шифрования *1</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container archive hidden">
+      <div class="content--label">
+        <h2 class="title--md title--border" id="archive">Архивы за месяц</h2>
+      </div>
+      <button class="tab-open"><span class="tab-open--figure">Январь</span></button>
+      <div class="tab-content">
+        <div class="tab-content_cnt"><span class="tab-content--line"><a href="https://page-report.github.io/https-page-report.github.io-report-01-23/" target="blank"><code>Отчет за месяц 01/23</code></a></span></div>
+      </div>
+      <button class="tab-open"><span class="tab-open--figure">Декабрь</span></button>
+      <div class="tab-content">
+        <div class="tab-content_cnt"><span class="tab-content--line"><a href="https://page-report.github.io/report_december/" target="blank"><code>Отчет за месяц 12/22</code></a></span></div>
+      </div>
+      <button class="tab-open"><span class="tab-open--figure">Ноябрь</span></button>
+      <div class="tab-content">
+        <div class="tab-content_cnt"><span class="tab-content--line"><a href="https://page-report.github.io/report-21-25-11/" target="blank"><code>Отчет за месяц 11/22</code></a></span></div>
+      </div>
+    </div>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/console.js"></script>
+  </body>
+</html>
